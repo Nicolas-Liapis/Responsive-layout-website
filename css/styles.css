@@ -21,7 +21,7 @@ body {
 .main-nav {
   width: 100%;
   background: #fafafa;
-  padding: 1em;
+  padding: .5em;
   color: #4a4a4a;
 }
 
@@ -131,8 +131,9 @@ body {
 
 hr {
   width: 90%;
-  -ms-width: 90%;
+  margin: 0 auto;
   border: 1.5px solid rgb(237,237,237);
+  /*-ms-width: 90%;*/
 }
 
 .info {
