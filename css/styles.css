@@ -230,6 +230,10 @@ span {
     display: inline-block;
   }
 
+  .profile-info {
+    text-align: left;
+  }
+
   .project {
     display: inline-block;
     width: 40%;
@@ -253,7 +257,7 @@ span {
   }
 
   .footer {
-    padding-bottom: 2em;
+    margin-bottom: 1em;
   }
   }
 
@@ -284,7 +288,7 @@ span {
   }
 
   .nav {
-    padding: 0;
+    padding-top: .5em;
     margin-right: 3em;
   }
 
@@ -301,11 +305,12 @@ span {
   .profile-info {
     padding-right: 2em;
     margin: 0;
+    text-align: left;
   }
 
   .portfolio {
-    margin-left: 3.5em;
-    margin-right: 3.5em;
+    margin-left: 3em;
+    margin-right: 3em;
     background: white;
   }
 
@@ -315,7 +320,7 @@ span {
   }
 
   .footer-nav {
-    margin-top: 2em;
+    margin: 0;
     margin-right: 1em;
   }
 
