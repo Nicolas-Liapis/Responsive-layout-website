@@ -117,7 +117,7 @@ body {
 
 .contact-title {
   font-weight: 900;
-  margin: 4em 0 1em 0;
+  margin: 3em 0 1em 0;
   color: #4a4a4a;
 }
 
@@ -131,6 +131,7 @@ body {
 
 hr {
   width: 90%;
+  -ms-width: 90%;
   border: 1.5px solid rgb(237,237,237);
 }
 
