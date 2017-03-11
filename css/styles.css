@@ -1,7 +1,6 @@
 /***** Color palette
 white: white
 dark-grey letters: 4a4a4a
-off-white: dad7cd
 light grey text: 8f8f8f
 orange hover: f78460
 beige new background: dad7cd
@@ -29,12 +28,11 @@ nav {
   width: 100%;
   background: #dad7cd;
   padding: .5em;
-  color: #4a4a4a;
 }
 
 nav a {
   background: white;
-  border: 4px solid #4a4a4a;
+  border: 3px solid #8f8f8f;
   border-radius: 20px;
 }
 
@@ -47,13 +45,12 @@ nav li {
   padding: 1.5em;
   line-height: 1.2em;
   color: #8f8f8f;
-  border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 20px;
 }
 
 /***** Nav & anchors styles*****/
 .nav {
-  font-weight: 900;
+  font-weight: 700;
+  font-size: 1em;
   list-style-type: none;
   margin: 0 auto;
   padding: 0;
@@ -65,10 +62,6 @@ nav li {
   font-family: Courgette;
   color: #f78460;
   font-size: 1.5em;
-  padding: .25em .5em .25em .5em;
-  border: 4px solid #4a4a4a;
-  border-radius: 20px;
-  background: white;
 
 }
 
@@ -76,7 +69,7 @@ nav li {
   display: block;
   text-align: center;
   text-decoration: none;
-  color: #4a4a4a;
+  color: #b0b3b7;
   padding: .5em;
   margin-top: .5em;
   background-color: white;
@@ -91,28 +84,21 @@ nav li {
 .profile-image {
   max-width: 80%;
   margin-left: 1em;
-  border: 4px solid #4a4a4a;
-  border-radius: 20px;
 }
 
 .profile-info {
   padding: 1em;
-  border: 4px solid #4a4a4a;
-  border-radius: 20px;
-  background: white;
 }
 
 /***** Portfolio styles*****/
 
 .portfolio {
-  max-width: 99%;
+  max-width: 100%;
   margin-top: 2em;
   display: flex;
   flex-direction: column;
   list-style-type: none;
   text-align: center;
-  border: 4px solid #4a4a4a;
-  border-radius: 20px;
 }
 
 .portfolio ul {
@@ -130,7 +116,7 @@ nav li {
 .project-title {
   color: #4a4a4a;
   font-weight: 900;
-  font-size: 1em;
+  font-size: 1.1em;
   margin: auto;
   padding: 2em;
 }
@@ -154,7 +140,7 @@ nav li {
 /***** Skills styles *****/
 
 .skills {
-  max-width: 99%;
+  max-width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -162,8 +148,6 @@ nav li {
   text-align: center;
   background: white;
   margin: 3em 0 3em 0;
-  border: 4px solid #4a4a4a;
-  border-radius: 20px;
 }
 
 .skills ul {
@@ -181,13 +165,6 @@ nav li {
   font-weight: 700;
   font-size: 1.1em;
   color: #f78460;
-  text-shadow:  1px 0px 1px #ccc, 0px 1px 1px #eee,
-    2px 1px 1px #ccc, 1px 2px 1px #eee,
-    3px 2px 1px #ccc, 2px 3px 1px #eee,
-    4px 3px 1px #ccc, 3px 4px 1px #eee,
-    5px 4px 1px #ccc, 4px 5px 1px #eee,
-    6px 5px 1px #ccc, 5px 6px 1px #eee,
-    7px 6px 1px #ccc;
 }
 
 .skills-title {
@@ -204,6 +181,7 @@ nav li {
 
 .contact-title {
   font-weight: 900;
+  font-size: 1.1em;
   margin: 3em 0 1em 0;
   color: #4a4a4a;
 }
@@ -212,18 +190,16 @@ nav li {
   display: flex;
   flex-direction: column;
   color: #8f8f8f;
-  background: white;
-  max-width: 99%;
-  border: 4px solid #4a4a4a;
-  border-radius: 20px;
+  background: #dad7cd;
+  max-width: 100%;
   margin-top: 3em;
-  margin-bottom: 3em;
+  margin-bottom: -.5em;
 }
 
 hr {
   width: 90%;
   margin: 0 auto;
-  border: 2px solid rgb(74,74,74);
+  border: 2px solid rgb(186, 187, 188);
 }
 
 .info {
@@ -255,8 +231,6 @@ span {
 
  .footer {
     background-color: #dad7cd;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
  }
 
  .footer-name {
@@ -314,15 +288,12 @@ span {
 
   .nav {
     flex-direction: row;
-    justify-content: space-between;
-    max-width: 30%;
+    justify-content: center;
   }
 
   .main-header {
     display: flex;
     flex-direction: row-reverse;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
   }
 
   .portfolio {
@@ -379,6 +350,7 @@ span {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-right: 4em;
   }
 
   .main-header {
@@ -393,7 +365,7 @@ span {
 
   .nav {
     padding-top: .5em;
-    margin-right: 3em;
+    margin-right: 0;
   }
 
   .name {
