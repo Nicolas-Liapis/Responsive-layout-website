@@ -9,7 +9,6 @@ orange hover: f78460
 /* Global Layout Set-up */
 * {
   box-sizing: border-box;
-  /*border:   1px solid red;*/
 }
 
 body {
@@ -114,7 +113,7 @@ body {
   padding: 1em;
 }
 
-/***** Contact *****/
+/***** Contact section styles *****/
 
 .contact-title {
   font-weight: 900;
@@ -162,7 +161,7 @@ span {
 }
 
 
-/***** Footer *****/
+/***** Footer styles*****/
 
  .footer {
     background-color: #fafafa;
@@ -255,11 +254,7 @@ span {
   .hidden-back {
     display: none;
   }
-
-  .footer {
-    margin-bottom: 1em;
-  }
-  }
+}
 
 @media(min-width: 1025px) {
 
