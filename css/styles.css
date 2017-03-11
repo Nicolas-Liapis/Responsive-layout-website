@@ -1,9 +1,10 @@
 /***** Color palette
 white: white
 dark-grey letters: 4a4a4a
-off-white: fafafa
+off-white: dad7cd
 light grey text: 8f8f8f
 orange hover: f78460
+beige new background: dad7cd
 *****/
 
 /*Check CSS*/
@@ -23,19 +24,31 @@ body {
   background: white;
 }
 
-/*****Main-nav, header styles*****/
-.main-nav {
+/*****Nav, header styles*****/
+nav {
   width: 100%;
-  background: #fafafa;
+  background: #dad7cd;
   padding: .5em;
   color: #4a4a4a;
 }
 
+nav a {
+  background: white;
+  border: 4px solid #4a4a4a;
+  border-radius: 20px;
+}
+
+nav li {
+  padding-left: .25em;
+}
+
 .main-header {
-  background: #fafafa;
+  background: #dad7cd;
   padding: 1.5em;
   line-height: 1.2em;
   color: #8f8f8f;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 /***** Nav & anchors styles*****/
@@ -49,9 +62,14 @@ body {
 }
 
 .name {
-  font-weight: 900;
+  font-family: Courgette;
+  color: #f78460;
   font-size: 1.5em;
-  padding: 0;
+  padding: .25em .5em .25em .5em;
+  border: 4px solid #4a4a4a;
+  border-radius: 20px;
+  background: white;
+
 }
 
 .nav a {
@@ -60,29 +78,41 @@ body {
   text-decoration: none;
   color: #4a4a4a;
   padding: .5em;
-  margin-top: .3em;
+  margin-top: .5em;
   background-color: white;
   transition: all .5s ease-out;
 }
 
 .nav a:hover {
-  color: #f78460;
+  background: #f78460;
+  color: white;
 }
 
 .profile-image {
   max-width: 80%;
-  margin: .5em;
+  margin-left: 1em;
+  border: 4px solid #4a4a4a;
+  border-radius: 20px;
+}
+
+.profile-info {
+  padding: 1em;
+  border: 4px solid #4a4a4a;
+  border-radius: 20px;
+  background: white;
 }
 
 /***** Portfolio styles*****/
 
 .portfolio {
-  max-width: 100%;
-  margin-bottom: 1em;
+  max-width: 99%;
+  margin-top: 2em;
   display: flex;
   flex-direction: column;
   list-style-type: none;
   text-align: center;
+  border: 4px solid #4a4a4a;
+  border-radius: 20px;
 }
 
 .portfolio ul {
@@ -101,7 +131,8 @@ body {
   color: #4a4a4a;
   font-weight: 900;
   font-size: 1em;
-  margin: 3em 0 3em 0;
+  margin: auto;
+  padding: 2em;
 }
 
 .project-sub-title {
@@ -120,6 +151,55 @@ body {
   height: 6em; /* This was added to fix an issue with the container size in IE */
 }
 
+/***** Skills styles *****/
+
+.skills {
+  max-width: 99%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  list-style-type: none;
+  text-align: center;
+  background: white;
+  margin: 3em 0 3em 0;
+  border: 4px solid #4a4a4a;
+  border-radius: 20px;
+}
+
+.skills ul {
+  list-style-type: none;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  background: white;
+  margin-bottom: 3em;
+}
+
+.icons {
+  padding: 1em;
+  font-weight: 700;
+  font-size: 1.1em;
+  color: #f78460;
+  text-shadow:  1px 0px 1px #ccc, 0px 1px 1px #eee,
+    2px 1px 1px #ccc, 1px 2px 1px #eee,
+    3px 2px 1px #ccc, 2px 3px 1px #eee,
+    4px 3px 1px #ccc, 3px 4px 1px #eee,
+    5px 4px 1px #ccc, 4px 5px 1px #eee,
+    6px 5px 1px #ccc, 5px 6px 1px #eee,
+    7px 6px 1px #ccc;
+}
+
+.skills-title {
+  color: #4a4a4a;
+  font-weight: 900;
+  font-size: 1.1em;
+  padding: 0em 1em 0em 1em;
+  background: white;
+  margin: 3em;
+}
+
+
 /***** Contact section styles *****/
 
 .contact-title {
@@ -132,14 +212,18 @@ body {
   display: flex;
   flex-direction: column;
   color: #8f8f8f;
-  background: #fafafa;
-  max-width: 100%;
+  background: white;
+  max-width: 99%;
+  border: 4px solid #4a4a4a;
+  border-radius: 20px;
+  margin-top: 3em;
+  margin-bottom: 3em;
 }
 
 hr {
   width: 90%;
   margin: 0 auto;
-  border: 1.5px solid rgb(237,237,237);
+  border: 2px solid rgb(74,74,74);
 }
 
 .info {
@@ -160,7 +244,6 @@ hr {
   margin: 0 auto;
   padding: 0 0 3em 0;
   display: block;
-
 }
 
 span {
@@ -171,12 +254,15 @@ span {
 /***** Footer styles*****/
 
  .footer {
-    background-color: #fafafa;
+    background-color: #dad7cd;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
  }
 
  .footer-name {
-   font-weight: 900;
-   font-size: 1.1em;
+   font-family: Courgette;
+   color: #f78460;
+   font-size: 1.2em;
    padding: 0;
    margin-right: auto;
    margin-left: 5%;
@@ -202,7 +288,7 @@ span {
 }
 
 .footer a:hover {
-  color: #f78460;
+  color: white;
 }
 
 .hidden-back {
@@ -216,9 +302,14 @@ span {
 
 /***** Media queries *****/
 
-@media(min-width: 769px) {
+@media(min-width: 768px) {
+
+  .body {
+      background-color: #dad7cd;
+  }
+
   .nav a{
-    background: #fafafa;
+    background: white;
   }
 
   .nav {
@@ -230,6 +321,8 @@ span {
   .main-header {
     display: flex;
     flex-direction: row-reverse;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
   }
 
   .portfolio {
@@ -249,6 +342,10 @@ span {
     padding: 0 9em 0 9em;
   }
 
+  .icons {
+    font-size: 1.5em;
+  }
+
   .footer-nav {
     justify-content: space-between;
   }
@@ -261,19 +358,24 @@ span {
   .hidden-back {
     display: none;
   }
+
+  .footer {
+     border-top-left-radius: 0px;
+     border-top-right-radius: 0px;
+  }
 }
 
-@media(min-width: 1025px) {
+@media(min-width: 1024px) {
 
    .main-header,
     body,
-   .footer,
-   .contact {
-    background: #fafafa;
+   .footer
+    {
+    background: #dad7cd;
     font-size: 1.1em;
   }
 
-  .main-nav {
+  nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -299,21 +401,18 @@ span {
     margin-left: 2.5em;
   }
 
-  .profile-image {
-      margin: 0;
-      padding: 0;
-  }
-
   .profile-info {
     padding-right: 2em;
     margin: 0;
     text-align: left;
   }
 
-  .portfolio {
+  .portfolio,
+  .skills  {
     margin-left: 3em;
     margin-right: 3em;
     background: white;
+    margin-bottom: 0;
   }
 
   .project-title {
@@ -323,6 +422,24 @@ span {
   .project {
     display: inline-block;
     width: 30%;
+  }
+
+  .skills {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    list-style-type: none;
+    text-align: center;
+    background: white;
+  }
+
+  .skills-title {
+    padding: 0em 10em 0em 10em;
+  }
+
+  .contact {
+    margin-left: 3em;
+    margin-right: 3em;
   }
 
   .footer-nav {
