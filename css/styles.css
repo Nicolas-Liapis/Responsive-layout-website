@@ -38,6 +38,7 @@ nav a {
 
 nav li {
   padding-left: .25em;
+  width: 130px;
 }
 
 .main-header {
@@ -47,7 +48,7 @@ nav li {
   color: #8f8f8f;
 }
 
-/***** Nav & anchors styles*****/
+/***** Nav class & anchors styles*****/
 .nav {
   font-weight: 700;
   font-size: 1em;
